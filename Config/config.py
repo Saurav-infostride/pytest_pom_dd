@@ -9,4 +9,4 @@ class TestData:
     LOGIN_PAGE_TITLE = "Swag Labs"
     HOME_PAGE_TITLE = "Swag Labs"
 
-    HOME_PAGE_HEADER = "PRODUCTS"
+    HOME_PAGE_HEADER = "PRODUCTSss"

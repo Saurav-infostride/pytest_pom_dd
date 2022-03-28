@@ -1,15 +1,11 @@
 import sys, os
-from xml.sax.xmlreader import Locator
 myPath = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, myPath + '/../')
 
 from Pages.BasePage import BasePage
 from Locators.Locators import Locators
 
-
 class HomePage(BasePage):
-
-    
 
     '''constructor of the page class'''
     def __init__(self, driver):

@@ -2,13 +2,11 @@ import sys, os
 myPath = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, myPath + '/../')
 
-import time
 import xlrd
 from Pages.HomePage import HomePage
 from Locators.Locators import Locators
 from Config.config import TestData
 from Pages.BasePage import BasePage
-from selenium.webdriver.common.by import By
 
 class LoginPage(BasePage):
 
@@ -29,9 +27,9 @@ class LoginPage(BasePage):
         sheet=workbook.sheet_by_name("login")
 
         rowCount = sheet.nrows
-        cols = sheet.ncols
-        print(rowCount)
-        print(cols)
+        # cols = sheet.ncols
+        # print(rowCount)
+        # print(cols)
         for curr_row in range(1, rowCount):
             username = sheet.cell_value(curr_row, 0)
             password = sheet.cell_value(curr_row, 1)
